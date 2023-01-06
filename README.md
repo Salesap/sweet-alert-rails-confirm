@@ -19,31 +19,19 @@ Rails >= 3.1
 
 ## Usage
 
-Using ```gem 'rails-assets-sweetalert'```
-
-application.js:
-
-```javascript
-//= require sweetalert
-//= require sweet-alert-confirm
-```
-application.css:
-
-```css
-/*
- *= require sweetalert
- */
+Add it to your Gemfile:
+```ruby
+gem 'sweet-alert'
+gem 'sweet-alert-confirm'
 ```
 
-Using ```gem 'sweet-alert'```
-
-application.js:
+Add the following to application.js:
 
 ```javascript
 //= require sweet-alert
 //= require sweet-alert-confirm
 ```
-application.css:
+Add the following to application.css:
 
 ```css
 /*
@@ -57,7 +45,7 @@ application.css:
 You can pass options in `data:`
 ```Ruby
  data: {
-  confirm: 'Are you ready?'
+  :'sweet-alert-confirm: 'Are you ready?'
   :'confirm-button-text' => 'Im ready',
   :'cancel-button-text' => 'No way',
   :'confirm-button-color' => '#66CD00',
